@@ -1,5 +1,5 @@
 class Api::ActorsController < ApplicationController
-  def actor
+  def actor_6
     @actor = Actor.find_by(id: 6)
     render "single.json.jb"
   end
