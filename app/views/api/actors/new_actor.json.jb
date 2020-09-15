@@ -1,0 +1,4 @@
+{
+  message: "NEW ACTOR ADDED TO THE DATABASE",
+  actor: @actor
+}

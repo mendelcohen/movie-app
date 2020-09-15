@@ -1,0 +1,4 @@
+{
+  message: "A NEW MOVIE HAS BEEN ADDED TO THE DATABASE",
+  movie: @movie
+}

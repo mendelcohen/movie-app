@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
   namespace :api do
-    get "/actors_6" => "actors#actor_6"
-    get "/all_movies_path" => "movies#all_movies"
-    get "/first_movie_path" => "movies#first_movie"
-    get "/take_movie_path" =>"movies#take_movie"
-    get "/actors" => "actors#actor"
-    get "/actors/:id" => "actors#actor"
+    get "/movies" => "movies#index"
+    get "/movies/:id" => "movies#show"
+    post "/movies" => "movies#create"
+    patch "/movies/:id" => "movies#update"
+    delete "/movies/:id" => "movies#destroy"
+    get "/actors" => "actors#index"
+    get "/actors/:id" => "actors#show"
+    post "/actors" => "actors#create"
+    patch "/actors/:id" => "actors#update"
+    delete "/actors/:id" => "actors#destroy"
     post "/actors" => "actors#actor"
   end
 end
