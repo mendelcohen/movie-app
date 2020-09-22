@@ -29,6 +29,7 @@ class Api::MoviesController < ApplicationController
     @movie.plot = params[:plot] || @movie.plot
     @movie.english = params[:english]  || @movie.english
     @movie.director = params[:director]  || @movie.director
+    @movie.movie_id = params[:movie_id] || @movie_id
     if @movie.save
       render "show.json.jb"
     else
