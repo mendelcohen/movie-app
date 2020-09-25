@@ -4,6 +4,5 @@
     year: @movie.year,
     plot: @movie.plot,
     english: @movie.english,
-    director: @movie.director,
-    movie_id: @movie.movie_id
+    director: @movie.director
    }
