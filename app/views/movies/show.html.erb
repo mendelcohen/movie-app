@@ -1,0 +1,17 @@
+<!-- render partial: "movie.json.jb", locals: { movie: @movie } -->
+
+<h1>Welcome to the Movie Show Page</h1>
+<h2>Here is the information you are searching for:</h2>
+<Ol> Movie details </Ol>
+  <li> Title: <%= @movie.title %> </li>
+  <li> Plot: <%= @movie.plot %> </li>
+  <li> Genres: <%= @movie.genre_names %> </li>
+<h3>Available for rent</h3>
+<h4>Fill out this form to rent this movie.</h3>
+<form action="/movies/<%= @movie.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <div>First Name: <input type="text" name="first_name"></div>
+  <div>Last Name: <input type="text" name="last_name"></div>
+  <div>How many days? 1 <input type="radio" name="question"> 2 <input type="radio" name="question"> 3 <input type="radio" name="question"> </div>
+  <input type="submit" value="Update Movie">
+</form>

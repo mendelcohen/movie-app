@@ -1,0 +1,6 @@
+<% @movies.map do |movie| %>
+  <h2> <%= movie.title %> </h2>
+  <h4> <%= movie.year %> </h4>
+  <h4> <%= movie.plot %> </h4>
+  <h5>Available for rent</h5>
+<% end %>
